@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6750A4" />
+  <title>My Material 3 Homepage</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Material 3 CSS -->
+  <style>
+    :root {
+      --md-sys-color-primary: #6750A4;
+      --md-sys-color-on-primary: #FFFFFF;
+      --md-sys-color-surface: #FFFBFE;
+      --md-sys-color-on-surface: #1C1B1F;
+      --md-sys-color-outline: #79747E;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--md-sys-color-surface);
+      color: var(--md-sys-color-on-surface);
+      padding: 1rem;
+    }
+
+    header {
+      background-color: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--md-sys-color-outline);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5b47a0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Homepage</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Hello!</h2>
+      <p>This is a clean Material 3 themed page. You can customize it with your own content, links, and colors.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="card">
+      <h2>About</h2>
+      <p>Replace this section with details about yourself or your project.</p>
+    </div>
+  </main>
+
+</body>
+</html>
